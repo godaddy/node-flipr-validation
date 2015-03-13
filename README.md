@@ -1,7 +1,7 @@
 node-flipr-validation
 ============
 
-**WORK IN PROGRESS Stability: 1 - Experimental** 
+**Stability: 1 - Experimental** 
 
 This project is part of the [flipr family](https://github.com/godaddy/node-flipr).
 

@@ -1,6 +1,9 @@
 node-flipr-validation
 ============
 
+[![NPM](https://nodei.co/npm/flipr-validation.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/flipr-validation/)
+[![Build Status](https://travis-ci.org/godaddy/node-flipr-validation.svg)](https://travis-ci.org/godaddy/node-flipr-validation)
+
 **Stability: 1 - Experimental** 
 
 This project is part of the [flipr family](https://github.com/godaddy/node-flipr).

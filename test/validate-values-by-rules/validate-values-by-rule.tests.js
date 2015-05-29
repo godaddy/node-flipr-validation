@@ -21,7 +21,7 @@ describe('validate-values-by-rule', function(){
       percentTotal: 0
     };
     lodashMock = mockLodash();
-    validateValueByRuleMock = 'validateValueByRule';
+    validateValueByRuleMock = function(){};
     sutProxy = proxyquire(sutPath, {
       'lodash': lodashMock,
       './validate-value-by-rule': validateValueByRuleMock
@@ -30,7 +30,7 @@ describe('validate-values-by-rule', function(){
 
   it('uses "percent" property if rule type is percent and no property is defined', function(){
     sutProxy('somekey', ['somevalue'], {type:'percent'});
-    expect(lodashMock.partialRight).to.be.calledWith('validateValueByRule', 'somekey', 'percent', sinon.match.object);
+    expect(lodashMock.partialRight).to.be.calledWith(validateValueByRuleMock, 'somekey', 'percent', sinon.match.object);
   });
   it('returns error if all values with percent are between 0 and 100 exclusive', function(){
     reduceResult.percentTotal = 5;

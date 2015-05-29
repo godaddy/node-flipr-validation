@@ -26,8 +26,16 @@ describe('validate-item', function(){
     var result = sut({value: null}, 'somekey');
     expect(result.length).to.equal(1);
   });
-  it('returns empty array for valid config item', function(){
+  it('returns empty array for valid config item (string)', function(){
     var result = sut({value: 'test value'}, 'somekey');
+    expect(result).to.be.empty;
+  });
+  it('returns empty array for valid config item (number)', function(){
+    var result = sut({value: 1}, 'somekey');
+    expect(result).to.be.empty;
+  });
+  it('returns empty array for valid config item (boolean)', function(){
+    var result = sut({value: false}, 'somekey');
     expect(result).to.be.empty;
   });
 });

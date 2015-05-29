@@ -1,6 +1,6 @@
 {
   "name": "flipr-validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validation for flipr config data.  Use this to catch bad configs before they go live.",
   "main": "lib/validate-config.js",
   "scripts": {

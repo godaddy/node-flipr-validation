@@ -1,11 +1,8 @@
-node-flipr-validation
-============
+# node-flipr-validation
 
 [![NPM](https://nodei.co/npm/flipr-validation.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/flipr-validation/)
 
 [![Build Status](https://travis-ci.org/godaddy/node-flipr-validation.svg)](https://travis-ci.org/godaddy/node-flipr-validation)
-
-**Stability: 1 - Experimental** 
 
 This project is part of the [flipr family](https://github.com/godaddy/node-flipr).
 
@@ -15,8 +12,8 @@ node-flipr-validation provides validation for flipr config data and rules.  You 
 
 #Usage
 ```javascript
-var fliprValidation = require('flipr-validation');
-var errors = fliprValidation({
+const fliprValidation = require('flipr-validation');
+const errors = fliprValidation({
   config: myConfigObject,
   rules: myRulesArray
 });
@@ -28,5 +25,5 @@ The errors array returned by fliprValidation will be empty if there are no valid
 * `rules` - _optional_ - array: The array of rules you will use against this config.  If you have rules but don't provide them, some of the validation will be skipped.  It's a good idea to pass the rules if you have them.
 
 # Would you like to know [more](http://i.imgur.com/IOvYPfT.jpg)?
-* [Validating a good config](/sample/validate-good-config.js)
-* [Validating a bad config](/sample/validate-bad-config.js)
+* [Validating a good config](sample/validate-good-config.js)
+* [Validating a bad config](sample/validate-bad-config.js)

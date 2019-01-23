@@ -8,7 +8,7 @@
 
 ### Breaking Changes
 
-- Only support node v10+
+- Drop support for node < v8.3
 
 ## v1.0.1 (May 29, 2015)
 

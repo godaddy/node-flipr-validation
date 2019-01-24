@@ -1,3 +1,15 @@
+## v2.0.0 (January 23, 2019)
+
+### Improvements
+
+- ES6+ Rewrite
+- `jest` for testing
+- `eslint` for linting
+
+### Breaking Changes
+
+- Drop support for node < v8.3
+
 ## v1.0.1 (May 29, 2015)
 
 Bug Fixes:

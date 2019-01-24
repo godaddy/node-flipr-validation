@@ -1,10 +1,8 @@
-'use strict';
-
-var fliprValidation = require('../lib/validate-config');
+const fliprValidation = require('../lib/validate-config');
 
 console.log('Result from an invalid config');
 
-var errors = fliprValidation({
+const errors = fliprValidation({
   rules: [{
     type: 'notARealType',
     input: null,

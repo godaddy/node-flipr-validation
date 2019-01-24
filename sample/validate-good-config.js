@@ -1,10 +1,8 @@
-'use strict';
-
-var fliprValidation = require('../lib/validate-config');
+const fliprValidation = require('../lib/validate-config');
 
 console.log('Result from a valid config');
 
-var noErrors = fliprValidation({
+const noErrors = fliprValidation({
   rules: [{
     type: 'percent',
     input: 'someProperty'
